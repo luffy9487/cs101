@@ -52,11 +52,12 @@ int main()
             }
             for ( int i = 5; i < 70; i++ ) {
                 if ( s[i] < 11 ) {
-                    fprintf(fp, "%0*d\n", 2, s[i]);
+                    fprintf(fp, "%0*d", 2, s[i]);
                     break;
                 }
             }
         }
+        fprintf(fp, "\n");
     }
     fclose(fp);
     
