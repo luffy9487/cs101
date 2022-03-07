@@ -18,7 +18,7 @@ void turn_number ( int a[], int n) {
 
 int main()
 {
-    int a = 0, n = 5, tmp = 0;
+    int a = 0, n = 6, tmp = 0;
     int s[70] = {0};
     srand((unsigned) time(NULL));
     time_t curtime;
@@ -50,7 +50,7 @@ int main()
             for ( int i = 0; i < n; i++ ) {
                 fprintf(fp, "%0*d ", 2, s[i]);
             }
-            for ( int i = 5; i < 70; i++ ) {
+            for ( int i = 6; i < 70; i++ ) {
                 if ( s[i] < 11 ) {
                     fprintf(fp, "%0*d", 2, s[i]);
                     break;
